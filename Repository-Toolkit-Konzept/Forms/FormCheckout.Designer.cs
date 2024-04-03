@@ -28,32 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new System.Windows.Forms.Label();
+            repoChoose = new System.Windows.Forms.GroupBox();
+            comboBox1 = new System.Windows.Forms.ComboBox();
+            groupBox1 = new System.Windows.Forms.GroupBox();
+            repoChoose.SuspendLayout();
             SuspendLayout();
             // 
-            // label1
+            // repoChoose
             // 
-            label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(245, 165);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(121, 25);
-            label1.TabIndex = 0;
-            label1.Text = "Checkout Test";
+            repoChoose.Controls.Add(comboBox1);
+            repoChoose.Location = new System.Drawing.Point(605, 28);
+            repoChoose.Margin = new System.Windows.Forms.Padding(2);
+            repoChoose.Name = "repoChoose";
+            repoChoose.Padding = new System.Windows.Forms.Padding(2);
+            repoChoose.Size = new System.Drawing.Size(300, 71);
+            repoChoose.TabIndex = 0;
+            repoChoose.TabStop = false;
+            repoChoose.Text = "Repository wählen:";
+            // 
+            // comboBox1
+            // 
+            comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new System.Drawing.Point(20, 31);
+            comboBox1.Margin = new System.Windows.Forms.Padding(2);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new System.Drawing.Size(257, 23);
+            comboBox1.TabIndex = 0;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Location = new System.Drawing.Point(80, 119);
+            groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            groupBox1.Size = new System.Drawing.Size(825, 344);
+            groupBox1.TabIndex = 1;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Paket und Version wählen:";
             // 
             // FormCheckout
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(800, 450);
-            Controls.Add(label1);
+            ClientSize = new System.Drawing.Size(986, 562);
+            Controls.Add(groupBox1);
+            Controls.Add(repoChoose);
+            Margin = new System.Windows.Forms.Padding(2);
             Name = "FormCheckout";
             Text = "FormCheckout";
+            repoChoose.ResumeLayout(false);
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox repoChoose;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

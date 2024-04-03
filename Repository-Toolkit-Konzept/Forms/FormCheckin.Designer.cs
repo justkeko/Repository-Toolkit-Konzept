@@ -90,6 +90,7 @@
             // 
             // comboBox4
             // 
+            comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             comboBox4.FormattingEnabled = true;
             comboBox4.Location = new System.Drawing.Point(17, 208);
             comboBox4.Name = "comboBox4";
@@ -107,6 +108,7 @@
             // 
             // comboBox3
             // 
+            comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             comboBox3.FormattingEnabled = true;
             comboBox3.Location = new System.Drawing.Point(17, 155);
             comboBox3.Name = "comboBox3";
@@ -124,6 +126,7 @@
             // 
             // comboBox2
             // 
+            comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             comboBox2.FormattingEnabled = true;
             comboBox2.Location = new System.Drawing.Point(17, 101);
             comboBox2.Name = "comboBox2";
@@ -141,6 +144,7 @@
             // 
             // comboBox1
             // 
+            comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             comboBox1.FormattingEnabled = true;
             comboBox1.Location = new System.Drawing.Point(17, 49);
             comboBox1.Name = "comboBox1";
@@ -311,8 +315,8 @@
             // 
             btnReset.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             btnReset.FlatAppearance.BorderSize = 2;
-            btnReset.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
-            btnReset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Coral;
+            btnReset.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Tomato;
+            btnReset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCoral;
             btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnReset.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold);
             btnReset.ForeColor = System.Drawing.Color.Red;
@@ -345,13 +349,13 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(986, 574);
+            ClientSize = new System.Drawing.Size(986, 562);
             Controls.Add(btnCheck_in);
             Controls.Add(btnReset);
             Controls.Add(BoxInfo);
             Controls.Add(BoxUmgebung);
             Controls.Add(BoxOptionen);
-            Margin = new System.Windows.Forms.Padding(2);
+            Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             Name = "FormCheckin";
             Text = "FormCheckin";
             BoxOptionen.ResumeLayout(false);

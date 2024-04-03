@@ -35,10 +35,10 @@
             btnPatch = new System.Windows.Forms.Button();
             btnHelp = new System.Windows.Forms.Button();
             btnBrowser = new System.Windows.Forms.Button();
+            ColorBar = new System.Windows.Forms.Panel();
             btnVersionDelete = new System.Windows.Forms.Button();
             btnCheckin = new System.Windows.Forms.Button();
             btnCheckout = new System.Windows.Forms.Button();
-            ColorBar = new System.Windows.Forms.Panel();
             ImageHolder = new System.Windows.Forms.Panel();
             RepoToolkit = new System.Windows.Forms.Label();
             Dp_Logo = new System.Windows.Forms.PictureBox();
@@ -60,13 +60,12 @@
             LeftDock.Controls.Add(btnVersionDelete);
             LeftDock.Controls.Add(btnCheckin);
             LeftDock.Controls.Add(btnCheckout);
-            LeftDock.Controls.Add(ColorBar);
             LeftDock.Controls.Add(ImageHolder);
             LeftDock.Dock = System.Windows.Forms.DockStyle.Left;
             LeftDock.Location = new System.Drawing.Point(0, 0);
             LeftDock.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             LeftDock.Name = "LeftDock";
-            LeftDock.Size = new System.Drawing.Size(172, 613);
+            LeftDock.Size = new System.Drawing.Size(172, 596);
             LeftDock.TabIndex = 0;
             // 
             // ExtraFuncHolder
@@ -74,7 +73,9 @@
             ExtraFuncHolder.Controls.Add(btnPatch);
             ExtraFuncHolder.Controls.Add(btnHelp);
             ExtraFuncHolder.Controls.Add(btnBrowser);
-            ExtraFuncHolder.Location = new System.Drawing.Point(0, 561);
+            ExtraFuncHolder.Controls.Add(ColorBar);
+            ExtraFuncHolder.Dock = System.Windows.Forms.DockStyle.Bottom;
+            ExtraFuncHolder.Location = new System.Drawing.Point(0, 557);
             ExtraFuncHolder.Name = "ExtraFuncHolder";
             ExtraFuncHolder.Size = new System.Drawing.Size(172, 39);
             ExtraFuncHolder.TabIndex = 1;
@@ -91,7 +92,7 @@
             btnPatch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             btnPatch.Name = "btnPatch";
             btnPatch.Padding = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            btnPatch.Size = new System.Drawing.Size(57, 39);
+            btnPatch.Size = new System.Drawing.Size(57, 34);
             btnPatch.TabIndex = 7;
             btnPatch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             tooltipPatch.SetToolTip(btnPatch, " ");
@@ -103,6 +104,7 @@
             // 
             btnHelp.Dock = System.Windows.Forms.DockStyle.Left;
             btnHelp.FlatAppearance.BorderSize = 0;
+            btnHelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
             btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnHelp.Font = new System.Drawing.Font("Candara", 11.25F);
             btnHelp.Image = (System.Drawing.Image)resources.GetObject("btnHelp.Image");
@@ -110,7 +112,7 @@
             btnHelp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             btnHelp.Name = "btnHelp";
             btnHelp.Padding = new System.Windows.Forms.Padding(7, 0, 8, 0);
-            btnHelp.Size = new System.Drawing.Size(57, 39);
+            btnHelp.Size = new System.Drawing.Size(57, 34);
             btnHelp.TabIndex = 6;
             btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             tooltipHelp.SetToolTip(btnHelp, " ");
@@ -131,11 +133,21 @@
             btnBrowser.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             btnBrowser.Name = "btnBrowser";
             btnBrowser.Padding = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            btnBrowser.Size = new System.Drawing.Size(57, 39);
+            btnBrowser.Size = new System.Drawing.Size(57, 34);
             btnBrowser.TabIndex = 5;
             btnBrowser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             tooltipBrowser.SetToolTip(btnBrowser, " ");
             btnBrowser.UseVisualStyleBackColor = true;
+            // 
+            // ColorBar
+            // 
+            ColorBar.BackColor = System.Drawing.Color.FromArgb(177, 19, 28);
+            ColorBar.Dock = System.Windows.Forms.DockStyle.Bottom;
+            ColorBar.ForeColor = System.Drawing.SystemColors.ControlText;
+            ColorBar.Location = new System.Drawing.Point(0, 34);
+            ColorBar.Name = "ColorBar";
+            ColorBar.Size = new System.Drawing.Size(172, 5);
+            ColorBar.TabIndex = 1;
             // 
             // btnVersionDelete
             // 
@@ -151,7 +163,7 @@
             btnVersionDelete.Padding = new System.Windows.Forms.Padding(8, 0, 8, 0);
             btnVersionDelete.Size = new System.Drawing.Size(172, 93);
             btnVersionDelete.TabIndex = 7;
-            btnVersionDelete.Text = "Paket löschen";
+            btnVersionDelete.Text = "Daten löschen";
             btnVersionDelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnVersionDelete.UseVisualStyleBackColor = true;
             btnVersionDelete.Click += btnVersionDelete_Click;
@@ -196,15 +208,6 @@
             btnCheckout.UseVisualStyleBackColor = true;
             btnCheckout.Click += btnCheckout_Click;
             btnCheckout.Leave += btnCheckout_Leave;
-            // 
-            // ColorBar
-            // 
-            ColorBar.BackColor = System.Drawing.Color.FromArgb(177, 19, 28);
-            ColorBar.ForeColor = System.Drawing.SystemColors.ControlText;
-            ColorBar.Location = new System.Drawing.Point(0, 596);
-            ColorBar.Name = "ColorBar";
-            ColorBar.Size = new System.Drawing.Size(171, 7);
-            ColorBar.TabIndex = 1;
             // 
             // ImageHolder
             // 
@@ -278,25 +281,25 @@
             // 
             panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             panelDesktop.Location = new System.Drawing.Point(172, 0);
-            panelDesktop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            panelDesktop.Margin = new System.Windows.Forms.Padding(2);
             panelDesktop.Name = "panelDesktop";
-            panelDesktop.Size = new System.Drawing.Size(1002, 613);
+            panelDesktop.Size = new System.Drawing.Size(1000, 596);
             panelDesktop.TabIndex = 1;
             // 
             // Main
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(1174, 613);
+            ClientSize = new System.Drawing.Size(1172, 596);
             Controls.Add(panelDesktop);
             Controls.Add(LeftDock);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MaximizeBox = false;
-            MaximumSize = new System.Drawing.Size(1190, 652);
+            MaximumSize = new System.Drawing.Size(1188, 645);
             MinimizeBox = false;
-            MinimumSize = new System.Drawing.Size(1190, 652);
+            MinimumSize = new System.Drawing.Size(1188, 626);
             Name = "Main";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Load += Main_Load;

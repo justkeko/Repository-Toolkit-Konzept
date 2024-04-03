@@ -70,10 +70,7 @@ namespace Repository_Toolkit_Konzept
 
         private void btnHelp_Click(object sender, EventArgs e)
         {
-            LeftDock.Height = btnHelp.Height;
-            LeftDock.Top = btnHelp.Top;
-            btnHelp.BackColor = Color.FromKnownColor(KnownColor.LightCoral);
-            OpenChildForm(new FormHelp());
+            
         }
 
         private void btnCheckout_Leave(object sender, EventArgs e)
