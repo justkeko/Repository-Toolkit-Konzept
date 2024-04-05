@@ -90,7 +90,6 @@
             // 
             // comboBox4
             // 
-            comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             comboBox4.FormattingEnabled = true;
             comboBox4.Location = new System.Drawing.Point(17, 208);
             comboBox4.Name = "comboBox4";
@@ -108,7 +107,6 @@
             // 
             // comboBox3
             // 
-            comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             comboBox3.FormattingEnabled = true;
             comboBox3.Location = new System.Drawing.Point(17, 155);
             comboBox3.Name = "comboBox3";
@@ -126,8 +124,8 @@
             // 
             // comboBox2
             // 
-            comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "alle PARAMs/MV", "alle PARAMs/NDL", "CERT", "HB", "HH", "ITU", "MV", "NDL", "NI", "SH", "ST", "UNIFA" });
             comboBox2.Location = new System.Drawing.Point(17, 101);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new System.Drawing.Size(253, 23);
@@ -144,8 +142,8 @@
             // 
             // comboBox1
             // 
-            comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Neue Version / bestehende Version anpassen", "Neues Paket" });
             comboBox1.Location = new System.Drawing.Point(17, 49);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new System.Drawing.Size(253, 23);
@@ -326,7 +324,6 @@
             btnReset.TabIndex = 4;
             btnReset.Text = "Zurücksetzen";
             btnReset.UseVisualStyleBackColor = true;
-            btnReset.Click += btnReset_Click;
             // 
             // btnCheck_in
             // 
@@ -343,7 +340,6 @@
             btnCheck_in.TabIndex = 5;
             btnCheck_in.Text = "CHECK IN";
             btnCheck_in.UseVisualStyleBackColor = true;
-            btnCheck_in.Click += btnCheck_in_Click;
             // 
             // FormCheckin
             // 
@@ -355,7 +351,7 @@
             Controls.Add(BoxInfo);
             Controls.Add(BoxUmgebung);
             Controls.Add(BoxOptionen);
-            Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            Margin = new System.Windows.Forms.Padding(2);
             Name = "FormCheckin";
             Text = "FormCheckin";
             BoxOptionen.ResumeLayout(false);

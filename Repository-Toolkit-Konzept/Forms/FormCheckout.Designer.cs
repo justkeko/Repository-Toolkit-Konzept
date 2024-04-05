@@ -48,8 +48,11 @@
             // 
             // comboBox1
             // 
-            comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            comboBox1.AutoCompleteCustomSource.AddRange(new string[] { "Archiv" });
+            comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            comboBox1.BackColor = System.Drawing.Color.White;
             comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Archiv", "Test-Repository (DEBUG)" });
             comboBox1.Location = new System.Drawing.Point(20, 31);
             comboBox1.Margin = new System.Windows.Forms.Padding(2);
             comboBox1.Name = "comboBox1";

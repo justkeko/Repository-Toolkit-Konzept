@@ -17,14 +17,5 @@ namespace Repository_Toolkit_Konzept
             InitializeComponent();
         }
 
-        private void btnReset_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnCheck_in_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

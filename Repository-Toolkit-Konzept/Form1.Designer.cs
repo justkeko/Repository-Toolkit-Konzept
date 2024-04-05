@@ -63,9 +63,9 @@
             LeftDock.Controls.Add(ImageHolder);
             LeftDock.Dock = System.Windows.Forms.DockStyle.Left;
             LeftDock.Location = new System.Drawing.Point(0, 0);
-            LeftDock.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            LeftDock.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             LeftDock.Name = "LeftDock";
-            LeftDock.Size = new System.Drawing.Size(172, 596);
+            LeftDock.Size = new System.Drawing.Size(246, 982);
             LeftDock.TabIndex = 0;
             // 
             // ExtraFuncHolder
@@ -75,9 +75,10 @@
             ExtraFuncHolder.Controls.Add(btnBrowser);
             ExtraFuncHolder.Controls.Add(ColorBar);
             ExtraFuncHolder.Dock = System.Windows.Forms.DockStyle.Bottom;
-            ExtraFuncHolder.Location = new System.Drawing.Point(0, 557);
+            ExtraFuncHolder.Location = new System.Drawing.Point(0, 917);
+            ExtraFuncHolder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             ExtraFuncHolder.Name = "ExtraFuncHolder";
-            ExtraFuncHolder.Size = new System.Drawing.Size(172, 39);
+            ExtraFuncHolder.Size = new System.Drawing.Size(246, 65);
             ExtraFuncHolder.TabIndex = 1;
             // 
             // btnPatch
@@ -88,11 +89,11 @@
             btnPatch.Font = new System.Drawing.Font("Candara", 11.25F);
             btnPatch.Image = (System.Drawing.Image)resources.GetObject("btnPatch.Image");
             btnPatch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnPatch.Location = new System.Drawing.Point(114, 0);
-            btnPatch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnPatch.Location = new System.Drawing.Point(162, 0);
+            btnPatch.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             btnPatch.Name = "btnPatch";
-            btnPatch.Padding = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            btnPatch.Size = new System.Drawing.Size(57, 34);
+            btnPatch.Padding = new System.Windows.Forms.Padding(11, 0, 11, 0);
+            btnPatch.Size = new System.Drawing.Size(81, 57);
             btnPatch.TabIndex = 7;
             btnPatch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             tooltipPatch.SetToolTip(btnPatch, " ");
@@ -108,11 +109,11 @@
             btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnHelp.Font = new System.Drawing.Font("Candara", 11.25F);
             btnHelp.Image = (System.Drawing.Image)resources.GetObject("btnHelp.Image");
-            btnHelp.Location = new System.Drawing.Point(57, 0);
-            btnHelp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnHelp.Location = new System.Drawing.Point(81, 0);
+            btnHelp.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             btnHelp.Name = "btnHelp";
-            btnHelp.Padding = new System.Windows.Forms.Padding(7, 0, 8, 0);
-            btnHelp.Size = new System.Drawing.Size(57, 34);
+            btnHelp.Padding = new System.Windows.Forms.Padding(10, 0, 11, 0);
+            btnHelp.Size = new System.Drawing.Size(81, 57);
             btnHelp.TabIndex = 6;
             btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             tooltipHelp.SetToolTip(btnHelp, " ");
@@ -130,23 +131,25 @@
             btnBrowser.Image = (System.Drawing.Image)resources.GetObject("btnBrowser.Image");
             btnBrowser.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             btnBrowser.Location = new System.Drawing.Point(0, 0);
-            btnBrowser.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnBrowser.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             btnBrowser.Name = "btnBrowser";
-            btnBrowser.Padding = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            btnBrowser.Size = new System.Drawing.Size(57, 34);
+            btnBrowser.Padding = new System.Windows.Forms.Padding(11, 0, 11, 0);
+            btnBrowser.Size = new System.Drawing.Size(81, 57);
             btnBrowser.TabIndex = 5;
             btnBrowser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             tooltipBrowser.SetToolTip(btnBrowser, " ");
             btnBrowser.UseVisualStyleBackColor = true;
+            btnBrowser.Click += btnBrowser_Click;
             // 
             // ColorBar
             // 
             ColorBar.BackColor = System.Drawing.Color.FromArgb(177, 19, 28);
             ColorBar.Dock = System.Windows.Forms.DockStyle.Bottom;
             ColorBar.ForeColor = System.Drawing.SystemColors.ControlText;
-            ColorBar.Location = new System.Drawing.Point(0, 34);
+            ColorBar.Location = new System.Drawing.Point(0, 57);
+            ColorBar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             ColorBar.Name = "ColorBar";
-            ColorBar.Size = new System.Drawing.Size(172, 5);
+            ColorBar.Size = new System.Drawing.Size(246, 8);
             ColorBar.TabIndex = 1;
             // 
             // btnVersionDelete
@@ -157,11 +160,11 @@
             btnVersionDelete.Font = new System.Drawing.Font("Candara", 11.25F);
             btnVersionDelete.Image = (System.Drawing.Image)resources.GetObject("btnVersionDelete.Image");
             btnVersionDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            btnVersionDelete.Location = new System.Drawing.Point(0, 291);
-            btnVersionDelete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnVersionDelete.Location = new System.Drawing.Point(0, 485);
+            btnVersionDelete.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             btnVersionDelete.Name = "btnVersionDelete";
-            btnVersionDelete.Padding = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            btnVersionDelete.Size = new System.Drawing.Size(172, 93);
+            btnVersionDelete.Padding = new System.Windows.Forms.Padding(11, 0, 11, 0);
+            btnVersionDelete.Size = new System.Drawing.Size(246, 155);
             btnVersionDelete.TabIndex = 7;
             btnVersionDelete.Text = "Daten löschen";
             btnVersionDelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -177,11 +180,11 @@
             btnCheckin.Font = new System.Drawing.Font("Candara", 11.25F);
             btnCheckin.Image = (System.Drawing.Image)resources.GetObject("btnCheckin.Image");
             btnCheckin.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            btnCheckin.Location = new System.Drawing.Point(0, 198);
-            btnCheckin.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnCheckin.Location = new System.Drawing.Point(0, 330);
+            btnCheckin.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             btnCheckin.Name = "btnCheckin";
-            btnCheckin.Padding = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            btnCheckin.Size = new System.Drawing.Size(172, 93);
+            btnCheckin.Padding = new System.Windows.Forms.Padding(11, 0, 11, 0);
+            btnCheckin.Size = new System.Drawing.Size(246, 155);
             btnCheckin.TabIndex = 6;
             btnCheckin.Text = "Paket-Checkin";
             btnCheckin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -197,11 +200,11 @@
             btnCheckout.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             btnCheckout.Image = (System.Drawing.Image)resources.GetObject("btnCheckout.Image");
             btnCheckout.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            btnCheckout.Location = new System.Drawing.Point(0, 105);
-            btnCheckout.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnCheckout.Location = new System.Drawing.Point(0, 175);
+            btnCheckout.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             btnCheckout.Name = "btnCheckout";
-            btnCheckout.Padding = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            btnCheckout.Size = new System.Drawing.Size(172, 93);
+            btnCheckout.Padding = new System.Windows.Forms.Padding(11, 0, 11, 0);
+            btnCheckout.Size = new System.Drawing.Size(246, 155);
             btnCheckout.TabIndex = 2;
             btnCheckout.Text = "Paket-Checkout";
             btnCheckout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -215,20 +218,20 @@
             ImageHolder.Controls.Add(Dp_Logo);
             ImageHolder.Dock = System.Windows.Forms.DockStyle.Top;
             ImageHolder.Location = new System.Drawing.Point(0, 0);
-            ImageHolder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            ImageHolder.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             ImageHolder.Name = "ImageHolder";
-            ImageHolder.Size = new System.Drawing.Size(172, 105);
+            ImageHolder.Size = new System.Drawing.Size(246, 175);
             ImageHolder.TabIndex = 1;
             // 
             // RepoToolkit
             // 
             RepoToolkit.AutoSize = true;
             RepoToolkit.Font = new System.Drawing.Font("Candara Light", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, 0);
-            RepoToolkit.Location = new System.Drawing.Point(22, 66);
-            RepoToolkit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            RepoToolkit.Location = new System.Drawing.Point(31, 110);
+            RepoToolkit.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             RepoToolkit.Name = "RepoToolkit";
-            RepoToolkit.Padding = new System.Windows.Forms.Padding(6, 3, 0, 0);
-            RepoToolkit.Size = new System.Drawing.Size(125, 21);
+            RepoToolkit.Padding = new System.Windows.Forms.Padding(9, 5, 0, 0);
+            RepoToolkit.Size = new System.Drawing.Size(190, 33);
             RepoToolkit.TabIndex = 1;
             RepoToolkit.Text = "Repository-Toolkit";
             RepoToolkit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -236,11 +239,11 @@
             // Dp_Logo
             // 
             Dp_Logo.Image = Properties.Resources._2560px_Dataport_Logo_svg;
-            Dp_Logo.Location = new System.Drawing.Point(13, 3);
-            Dp_Logo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Dp_Logo.Location = new System.Drawing.Point(19, 5);
+            Dp_Logo.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             Dp_Logo.Name = "Dp_Logo";
-            Dp_Logo.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
-            Dp_Logo.Size = new System.Drawing.Size(145, 60);
+            Dp_Logo.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            Dp_Logo.Size = new System.Drawing.Size(207, 100);
             Dp_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             Dp_Logo.TabIndex = 0;
             Dp_Logo.TabStop = false;
@@ -280,26 +283,25 @@
             // panelDesktop
             // 
             panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            panelDesktop.Location = new System.Drawing.Point(172, 0);
-            panelDesktop.Margin = new System.Windows.Forms.Padding(2);
+            panelDesktop.Location = new System.Drawing.Point(246, 0);
             panelDesktop.Name = "panelDesktop";
-            panelDesktop.Size = new System.Drawing.Size(1000, 596);
+            panelDesktop.Size = new System.Drawing.Size(1420, 982);
             panelDesktop.TabIndex = 1;
             // 
             // Main
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(1172, 596);
+            ClientSize = new System.Drawing.Size(1666, 982);
             Controls.Add(panelDesktop);
             Controls.Add(LeftDock);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
-            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             MaximizeBox = false;
-            MaximumSize = new System.Drawing.Size(1188, 645);
+            MaximumSize = new System.Drawing.Size(1688, 1038);
             MinimizeBox = false;
-            MinimumSize = new System.Drawing.Size(1188, 626);
+            MinimumSize = new System.Drawing.Size(1688, 1006);
             Name = "Main";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Load += Main_Load;

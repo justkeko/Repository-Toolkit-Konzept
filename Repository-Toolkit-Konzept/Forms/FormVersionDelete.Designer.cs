@@ -46,7 +46,6 @@
             // comboBox1
             // 
             comboBox1.DisplayMember = "Paket";
-            comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Paketdateien", "Paketversion", "Paket" });
             comboBox1.Location = new System.Drawing.Point(82, 40);

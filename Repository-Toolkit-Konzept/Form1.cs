@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -70,38 +71,43 @@ namespace Repository_Toolkit_Konzept
 
         private void btnHelp_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnCheckout_Leave(object sender, EventArgs e)
         {
             btnCheckout.BackColor = Color.FromKnownColor(KnownColor.LightGray);
-            currentChildForm.Close();
+            
         }
 
         private void btnCheckin_Leave(object sender, EventArgs e)
         {
             btnCheckin.BackColor = Color.FromKnownColor(KnownColor.LightGray);
-            currentChildForm.Close();
+            
         }
 
         private void btnVersionDelete_Leave(object sender, EventArgs e)
         {
             btnVersionDelete.BackColor = Color.FromKnownColor(KnownColor.LightGray);
-            currentChildForm.Close();
+            
         }
 
         private void btnPatch_Leave(object sender, EventArgs e)
         {
             btnPatch.BackColor = Color.FromKnownColor(KnownColor.LightGray);
-            currentChildForm.Close();
+            
         }
 
         private void btnHelp_Leave(object sender, EventArgs e)
         {
             btnHelp.BackColor = Color.FromKnownColor(KnownColor.LightGray);
-            currentChildForm.Close();
+            
         }
 
+        private void btnBrowser_Click(object sender, EventArgs e)
+        {           
+            Process.Start("https://www.example.com");
+        }
+    
     }
 }
