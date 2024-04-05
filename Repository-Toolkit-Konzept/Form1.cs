@@ -38,11 +38,12 @@ namespace Repository_Toolkit_Konzept
         }
 
         private void btnCheckout_Click(object sender, EventArgs e)
-        {
+        {   
             LeftDock.Height = btnCheckout.Height;
             LeftDock.Top = btnCheckout.Top;
             btnCheckout.BackColor = Color.FromKnownColor(KnownColor.LightCoral);
             OpenChildForm(new FormCheckout());
+            
         }
 
         private void btnCheckin_Click(object sender, EventArgs e)
